@@ -41,6 +41,7 @@ class ProductController extends Controller
             'description' => 'required|string',
             'stock' => 'required|integer',
             'price' => 'required|integer',
+            'category_id' => 'required|integer',
         ]);
 
         // Crear un nuevo registro en la base de datos

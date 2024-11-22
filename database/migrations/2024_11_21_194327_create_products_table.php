@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('description')->nullable(); // Campo de descripción
             $table->integer('stock')->default(0);      // Campo de stock
             $table->integer('price')->default(0); // Campo de precio
+            $table->foreignIdFor(\App\Models\Category::class)->constrained();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });
